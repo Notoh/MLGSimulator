@@ -15,10 +15,12 @@ namespace Test1 {
             Console.WriteLine("\n\t------MLG Simulator by Alex Pawelko------\t\n");
             for (int turns = 1; turns < 16; turns++) {
                 Console.WriteLine("\n\tYou are on turn " + turns + ".");
+                Console.WriteLine("\n\tYou earned " + CalcPtsTurn() + " MLG Points this turn!");
+                MLGPoints += CalcPtsTurn();
                 Console.WriteLine("\n\tYou have " + MLGPoints + " MLG Points.");
                 Console.WriteLine("\n\tYou are earning " + CalcPtsTurn() + " MLG Points per turn.");
                 Console.WriteLine("\n\tCurrently you have " + Doritos + " Doritos and " + MTNDew + " litres of Mountain Dew.");
-
+                
                 Console.WriteLine("\n\tDo you want to buy any Doritos? Doritios earn " + DoritosPtsTurn + " and cost " + DoritosCost + " MLG Points. If you do not wish to buy any, type 0.");
                 int wannaBuy;
                 string attempt = Console.ReadLine();

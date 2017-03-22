@@ -1,6 +1,6 @@
 using System;
 
-namespace Test1 {
+namespace MLGSim {
     internal class MLGSimulator {
         private static int MLGPoints = 100;
         private static int Doritos = 0;

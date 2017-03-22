@@ -20,8 +20,8 @@ namespace Test1 {
                 Console.WriteLine("\n\tYou have " + MLGPoints + " MLG Points.");
                 Console.WriteLine("\n\tYou are earning " + CalcPtsTurn() + " MLG Points per turn.");
                 Console.WriteLine("\n\tCurrently you have " + Doritos + " Doritos and " + MTNDew + " litres of Mountain Dew.");
-                
-                Console.WriteLine("\n\tDo you want to buy any Doritos? Doritios earn " + DoritosPtsTurn + " and cost " + DoritosCost + " MLG Points. If you do not wish to buy any, type 0.");
+
+                Console.WriteLine("\n\tDo you want to buy any Doritos? Doritos earn " + DoritosPtsTurn + " and cost " + DoritosCost + " MLG Points. If you do not wish to buy any, type 0.");
                 int wannaBuy;
                 string attempt = Console.ReadLine();
                 bool noError = Int32.TryParse(attempt, out wannaBuy);
@@ -80,7 +80,7 @@ namespace Test1 {
                 Console.WriteLine("\n\tTurn " + turns + " has ended.");
                 Console.WriteLine("\n\t------------------------------------------------");
             }
-            Console.WriteLine("The game has ended with you scoring " + MLGPoints + " points with " + Doritos + " Doritos and " + MTNDew + " litres of Mountain Dew!");
+            Console.WriteLine("The game has ended with you scoring " + MLGPoints + " MLG Points with " + Doritos + " Doritos and " + MTNDew + " litres of Mountain Dew!");
         }
 
         private static int CalcPtsTurn() {

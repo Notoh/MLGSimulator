@@ -1,2 +1,4 @@
 # MLGSimulator
-A game that's so not MLG but is trying way to hard to be MLG.
+A commandline game that's trying way to hard to be MLG.
+
+should be updated decently soon because summer is coming

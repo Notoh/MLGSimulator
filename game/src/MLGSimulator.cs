@@ -58,10 +58,10 @@ namespace MLGSim {
                         int buyAttempt = 0;
                         for (; buyAttempt < wannaBuy; buyAttempt++) {
                             if (MLGPoints - DewCost >= 0) {
-                                ++Doritos;
+                                ++MTNDew;
                                 MLGPoints -= DewCost;
                             } else {
-                                Console.WriteLine("\n\tYou didn't have enough MLG Points to buy all those. You bought " + buyAttempt + " Doritos before you ran out of MLG Points.");
+                                Console.WriteLine("\n\tYou didn't have enough MLG Points to buy all those. You bought " + buyAttempt + " litres of Mountain Dew before you ran out of MLG Points.");
                                 break;
                             }
                         }
@@ -70,7 +70,7 @@ namespace MLGSim {
                     }
                     else if (wannaBuy < 0) {
                         Console.WriteLine("\n\tDid you fail grade 2 math? You can't buy " + wannaBuy +
-                                          " Doritos. Just to make you mad I'm going to make you lose all your money.");
+                                          " litres of Mountain Dew. Just to make you mad I'm going to make you lose all your money.");
                         MLGPoints = 0;
                     }
                 } else {
